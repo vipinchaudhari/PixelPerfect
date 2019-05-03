@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_pp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_margin="@{16}"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <Button
+            android:id="@+id/tv_pp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toTopOf="@+id/tv_sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_image"
+            app:layout_marginEnd="@{16}"
+            app:layout_marginStart="@{16}"
+            app:textSize="@{24}" />
+
+        <Button
+            android:id="@+id/tv_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pp"
+            app:layout_marginEnd="@{16}"
+            app:layout_marginStart="@{16}"
+            app:layout_marginBottom="@{16}"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
