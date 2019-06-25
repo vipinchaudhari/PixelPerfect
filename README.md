@@ -42,7 +42,7 @@
 - Library provides XML attributes to customize the `RulerValuePicker` or you can customize it dynamically using Java/Kotlin code.
 
 |Attribute|Type|
-|:---:|:---:|:---:|:---:|
+|:---:|:---:|
 |layout_marginTop|Integer|
 |layout_marginBottom|Integer|
 |layout_marginStart|Integer|
