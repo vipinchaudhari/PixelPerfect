@@ -71,7 +71,7 @@ DataBindingUtil.setContentView(this,R.layout.activity_main);
 Every small or large contribution to this project is appreciated. Make sure you read the [contribution guide](/.github/CONTRIBUTING.md) before generating the pull request.
 
 ## Questions?🤔
-E-mail me on mehtarohan0911@gmail.com
+E-mail me on vipsdeveloper@gmail.com
 
 ## Acknowledgements:
 - This library is based on databinding concept.
