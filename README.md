@@ -89,5 +89,5 @@ http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 <div align="center">
-<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj43an-toTjAhXWfysKHYkfBI4QjRx6BAgBEAU&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fdancing-monkey&psig=AOvVaw3E_TfWt-jB351rxvNZ19ez&ust=1561545108759553">
+<img src="https://media.giphy.com/media/cegWQ66TiGYDK/giphy.gif">
 </div>
