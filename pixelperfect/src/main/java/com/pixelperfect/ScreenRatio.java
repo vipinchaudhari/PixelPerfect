@@ -12,8 +12,8 @@ public class ScreenRatio {
     public static void setupScreenResolution(int width, int height, Context context) {
         referenceScreenWidth = width;
         referenceScreenHeight = height;
-        deviceScreenWidth = context.getResources().getDisplayMetrics().widthPixels;
-        deviceScreenHeight = context.getResources().getDisplayMetrics().heightPixels;
+        deviceScreenWidth = getScreenWidth();
+        deviceScreenHeight = getScreenHeight();
     }
 
     public static void setupScreenResolution(Context context) {
@@ -21,5 +21,14 @@ public class ScreenRatio {
         deviceScreenHeight = context.getResources().getDisplayMetrics().heightPixels;
     }
 
+    private float getScreenWidth() {
+        //return screenWidth==0?getResources().getDisplayMetrics().widthPixels:screenWidth;
+        return (referenceScreenWidth * getScreenHeight()) / referenceScreenHeight;
+    }
+
+    private float getScreenHeight() {
+        //return screenHeight==0?getResources().getDisplayMetrics().heightPixels:screenHeight;
+        return (referenceScreenHeight * getResources().getDisplayMetrics().widthPixels) / referenceScreenWidth;
+    }
 
 }
