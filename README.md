@@ -20,7 +20,7 @@
         ```
     - Add below dependency into your build.gradle file.
         ```groovy
-        implementation 'com.github.vipinchaudhari:PixelPerfect:1.2'
+        implementation 'com.github.vipinchaudhari:PixelPerfect:1.3'
         ```
     - Call below method to set your base screen resolution in Application class. The screen dimensions you provide here will be used as a base reference for calculating the component sizes. Default screen resolution is 360x640. You can get this ratio from your marvel app screens. 
     ```java
