@@ -6,14 +6,14 @@ public class ScreenRatio {
     public static Integer referenceScreenWidth = 360;
     public static Integer referenceScreenHeight = 640;
 
-    public static Integer deviceScreenWidth = 360;
-    public static Integer deviceScreenHeight = 640;
+    public static float deviceScreenWidth = 360;
+    public static float deviceScreenHeight = 640;
 
     public static void setupScreenResolution(int width, int height, Context context) {
         referenceScreenWidth = width;
         referenceScreenHeight = height;
-        deviceScreenWidth = getScreenWidth();
-        deviceScreenHeight = getScreenHeight();
+        deviceScreenWidth = getScreenWidth(context);
+        deviceScreenHeight = getScreenHeight(context);
     }
 
     public static void setupScreenResolution(Context context) {
@@ -21,14 +21,14 @@ public class ScreenRatio {
         deviceScreenHeight = context.getResources().getDisplayMetrics().heightPixels;
     }
 
-    private float getScreenWidth() {
+    private static float getScreenWidth(Context context) {
         //return screenWidth==0?getResources().getDisplayMetrics().widthPixels:screenWidth;
-        return (referenceScreenWidth * getScreenHeight()) / referenceScreenHeight;
+        return (referenceScreenWidth * getScreenHeight(context)) / referenceScreenHeight;
     }
 
-    private float getScreenHeight() {
+    private static float getScreenHeight(Context context) {
         //return screenHeight==0?getResources().getDisplayMetrics().heightPixels:screenHeight;
-        return (referenceScreenHeight * getResources().getDisplayMetrics().widthPixels) / referenceScreenWidth;
+        return (referenceScreenHeight * context.getResources().getDisplayMetrics().widthPixels) / referenceScreenWidth;
     }
 
 }
